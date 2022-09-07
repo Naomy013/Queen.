@@ -1,0 +1,173 @@
+* { font-family: 'DM Sans', sans-serif; }
+
+body { margin:0;  background-image: url(../Images/background.jpg);}
+
+.centro { text-align: center; }
+
+header 
+{ 
+    height: 340px; 
+    background-image: url(../Images/queen.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.sombraCaixinha
+{
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(125,125,125,0.79); 
+    box-shadow: 3px 3px 5px 0px rgba(125,125,125,0.79);
+}
+
+
+.regiaoInformacoes
+{
+    background-color: #fff;
+    width: 1000px;
+    margin: auto;
+    margin-top: -30px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 5px;
+}
+
+
+.areaTexto
+{
+    width: 800px;
+}
+
+.logo
+{
+    width: 200px;   
+    position: absolute;
+    top: -65px;
+    right: -26px;
+}
+
+.regiaoDiscografia
+{
+    width: 1000px;
+    margin: auto;   
+}
+
+h1 
+{ 
+    color:  #111211;
+    text-align: center; 
+    font-family: 'DM Sans', sans-serif;
+    font-size:30px; 
+}
+
+.areaDiscos
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.areaDiscos img { width: 242.5px; }
+
+.regiaoAgenda
+{
+    width: 1000px;
+    margin: auto;
+}
+
+table { width: 100%; margin:auto; }
+table th, td { border: thin solid #585e94; }
+table th { background-color: black; color: white; }
+table td { background-color: white; }
+
+.regiaoContatos
+{
+    width: 1000px;
+    margin: auto;
+}
+
+.regiaoRedes
+{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.regiaoRedes img { filter: drop-shadow(3px 2px 2px rgba(0,0,0,0.5)); }
+
+footer
+{
+    background-color: black;
+    color:  #fff;
+    text-align: center;
+    padding:  2px;  
+    margin-top: 30px;
+}
+
+/* ------------------------------- MEDIA QUERY ----------------------------- */
+
+@media screen and (max-width: 600px)
+{
+    header 
+    {
+        background-size: contain;
+        height: 200px;
+    }
+
+    .regiaoInformacoes, .regiaoDiscografia, .regiaoAgenda, .regiaoContatos 
+    { 
+        width: 90%; 
+    }
+
+    .regiaoInformacoes
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .areaTexto {width: 100%;}
+
+    .logo
+    {
+        position: initial;
+        margin-top: -88px;
+    }
+
+    .areaDiscos {flex-direction: column; align-items: center; gap: 20px;}
+
+    .areaDiscos img { width: 100%; }
+
+    table th { display: none; }
+    table td 
+    { 
+        width: 100%; 
+        float:left; 
+        text-align: center; 
+        border: thin solid white;
+        -webkit-box-shadow: 5px 5px 4px 0px rgba(125,125,125,0.79); 
+        box-shadow: 5px 5px 4px 0px rgba(125,125,125,0.79);
+    }
+    table td:last-child { margin-bottom: 20px; }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 920px)
+{
+    header 
+    {
+        height: 230px;
+    }   
+
+    .regiaoInformacoes, .regiaoDiscografia, .regiaoAgenda, .regiaoContatos 
+    { 
+        width: 90%; 
+    }
+
+    .areaTexto {width: 80%;}
+
+    .logo { width: 180px; }
+
+    .areaDiscos { justify-content: center; gap: 20px;}
+}
